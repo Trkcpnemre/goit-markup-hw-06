@@ -581,3 +581,131 @@
       font-weight: 400;
     }
   }
+
+  /* team */
+.team {
+    background-color: #f4f4fd;
+  }
+  
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+  
+    margin: 0 auto;
+    margin-bottom: 72px;
+  
+    color: #2e2f42;
+  }
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+  
+  .team-item {
+    background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+  
+  .team-img {
+    width: 100%;
+    display: block;
+  }
+  
+  .team-name {
+    padding: 32px 16px;
+  }
+  
+  .team-subtitle {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  
+  .team-text {
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  
+  .social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+  }
+  
+  .social-items {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon {
+    fill: #f4f4fd;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container.team {
+      min-width: 552px;
+    }
+    .team-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+      row-gap: 64px;
+    }
+  
+    .team-item {
+      max-width: 264px;
+    }
+  }
+  
+  @media screen and (min-width: 1158px) {
+    .team-list {
+      gap: 24px;
+    }
+  
+    .team-item {
+      width: calc((100% - 72) / 3);
+    }
+  
+    .team-name {
+      padding: 32px 0 32px 0;
+    }
+    .social-link {
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: background-color;
+    }
+  
+    .social-link:hover,
+    .social-link:focus {
+      background-color: #404bbf;
+    }
+  }
+  
